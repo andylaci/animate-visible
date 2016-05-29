@@ -1,0 +1,14 @@
+.av-invisible {
+  opacity: 0;
+}
+@for $i from 1 to 30 {
+  .av-animation-#{$i}00 {
+    animation-duration: #{$i + '00ms'};
+    animation-fill-mode: both;
+  }
+}
+@for $i from 1 to 30 {
+  .av-delay-#{$i}00 {
+    animation-delay: #{$i + '00ms'};
+  }
+}

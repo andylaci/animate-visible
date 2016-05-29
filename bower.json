@@ -1,0 +1,20 @@
+{
+  "name": "animate-visible",
+  "authors": [
+    "Andrej Lacko <lacko.andy@gmail.com>"
+  ],
+  "description": "Library to add animation classes when element is visible in browser screen.",
+  "main": "animate-visible.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
