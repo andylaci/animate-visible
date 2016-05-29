@@ -8,6 +8,7 @@ Library that provide css3 animation after element is visible in browser screen. 
 - Install this package through bower with command: `bower install animate-visible --save` .
 - Add file `animate-visible.js` found in the root of package to your project. If using with other libs, don't forget to check, if $ variable is reserved. You need jQuery with this lib.
 - Add and check Animation css file `animate-visible.css`, in this file durations and delays are set. You can define your own in your own file, but then have to modify the core of the package.
+- Create animation css classes like in sample.html file and use them. Very nice library is written here: [animate.css](https://daneden.github.io/animate.css/)
   
 ##Credits
 

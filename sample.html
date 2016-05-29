@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate Visible Sample</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="animate-visible.css" type="text/css">
+
+</head>
+<body>
+<style>
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  .container {
+    max-width: 40em;
+    margin: 10em auto;
+  }
+</style>
+<div class="container">
+  <h1>Animate visible</h1>
+  <p>
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis enim eu euismod ultricies. Etiam bibendum orci
+    dignissim lectus egestas, nec pharetra nisi porta. Quisque non metus sollicitudin, posuere ex non, mattis leo. Etiam
+    bibendum pretium fringilla. Fusce semper quam non neque condimentum, malesuada ornare ante tempus. Curabitur
+    fringilla, odio ut semper lobortis, neque tellus iaculis enim, sed bibendum metus lorem sed diam. Ut semper, neque
+    quis feugiat efficitur, nisi lectus luctus enim, quis lobortis elit ante vitae elit. Etiam quis maximus justo. Proin
+    vulputate ante id libero fringilla, a fermentum nunc gravida. Phasellus sodales semper ipsum, quis tempus neque
+    eleifend pellentesque. Etiam suscipit ornare tincidunt.
+
+    Integer ultrices mollis viverra. Pellentesque efficitur tempor pharetra. Nullam aliquam porta posuere. Integer purus
+    ipsum, bibendum eu scelerisque eget, suscipit et ante. Integer porttitor ipsum eget elementum malesuada. Sed pretium
+    sodales rhoncus. Suspendisse faucibus semper diam, non tempus eros porta ac.
+
+    Proin lacinia mattis massa, sit amet rutrum metus condimentum vitae. Nam congue lorem sed mauris tincidunt commodo.
+    Ut
+    ipsum mi, porta vel rutrum eget, vehicula sed risus. Nunc nec diam consectetur, commodo ex at, iaculis est. Nam
+    congue, nunc vel tincidunt vestibulum, sem orci dapibus est, at pulvinar nulla purus at dui. Etiam non magna ut est
+    rhoncus interdum. Ut mattis ornare nunc, non feugiat lacus. Vestibulum ac vestibulum massa. Sed sed ligula lectus.
+    Cras efficitur lectus ac dui pharetra, sit amet pharetra orci consectetur. Maecenas ornare, diam quis iaculis
+    pellentesque, ante velit cursus nisi, in porttitor erat risus id tellus. Aenean sollicitudin dictum odio ac viverra.
+    Donec rutrum sem purus, ac fringilla metus finibus quis.
+
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam non mauris nec
+    eros fermentum tempus consequat ac nulla. Curabitur auctor purus id est posuere, ac interdum purus sodales. Mauris
+    sit
+    amet nulla sit amet libero facilisis cursus sit amet vel massa. Nulla tristique volutpat congue. Morbi cursus elit
+    vel
+    ligula finibus, eget efficitur purus congue. Ut a nulla lacus. Duis tempor in dui a accumsan. Duis malesuada
+    consectetur tincidunt. Pellentesque sodales nisl nec mauris egestas, nec commodo felis hendrerit. Suspendisse
+    venenatis leo sit amet mi porttitor, eu lobortis metus consequat.
+
+    Curabitur metus eros, tempor volutpat orci sit amet, tempor bibendum quam. Ut quis nunc id felis euismod eleifend.
+    Mauris venenatis dui non ante accumsan, et tincidunt est viverra. Proin at orci vulputate, porta erat non, gravida
+    libero. Vivamus tincidunt, ipsum sed consequat commodo, dui orci rutrum diam, a venenatis tortor neque ornare dolor.
+    Cras venenatis eros turpis, non tincidunt leo tincidunt at. Proin at maximus elit.
+  </p>
+  <h2 id="animate-element">This is animate visible</h2>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="animate-visible.js"></script>
+<script>
+  $(document).ready(function () {
+    animateVisible($('#animate-element'), 'fadeInDown', 1000, 200);
+
+  });
+
+</script>
+</body>
+</html>
